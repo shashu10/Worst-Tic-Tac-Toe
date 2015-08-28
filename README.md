@@ -4,8 +4,8 @@ X|X|X
 O| | 
 O| | 
 ```
-The computer which is designed to let you win.
 Simple command line game. User is X, computer is O
+The computer is designed to let you win.
 
 User places an X by typing a number from 1 - 9 
 ```
