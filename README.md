@@ -13,3 +13,6 @@ User places an X by typing a number from 1 - 9
 4|5|6
 7|8|9
 ```
+
+Uses raw_input() that works with python 2.7
+Use input() if using python 3.0 and above
