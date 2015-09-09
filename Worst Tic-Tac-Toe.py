@@ -79,11 +79,10 @@ class TicTacToe:
 
 		# Continuously ask for input until user cancels
 		while True:
-			print "Enter a number:"
 
 			# Validate Move
 			try:
-				move = int(raw_input())
+				move = int(raw_input("Enter a number: "))
 			except Exception, e:
 				print "Didn't understand that. Type 0 to cancel or type a number from 1 - 9"
 				continue
