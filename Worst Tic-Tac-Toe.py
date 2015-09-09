@@ -1,12 +1,15 @@
 # User is X. Computer is O. Create a new instance and call start()
 class TicTacToe:
 
-	def init(self, size):
+	# Setup the maze and welcome the user
+	def __init__(self, size = 3):
 		self.SIZE = size
 		self.maze = [[" " for i in range(size)] for i in range(size)]
 		
 		self.printMaze([[1,4,7],[2,5,8],[3,6,9]])
 		print "Type your move with numbers as shown in the grid"
+
+		self.run(size)
 
 	def printMaze(self, maze = None):
 		if not maze:
@@ -72,10 +75,7 @@ class TicTacToe:
 			if possibleMove:
 				maze[possibleMove[0]][possibleMove[1]] = "O"
 
-	def start(self, size = 3):
-		
-		# Setup the maze and welcome the user
-		self.init(size)
+	def run(self, size = 3):
 
 		# Continuously ask for input until user cancels
 		while True:
@@ -117,6 +117,6 @@ class TicTacToe:
 
 		print "Thanks for playing"
 
+# Initializes and runs the default tic tac toe game
 ttc = TicTacToe()
-ttc.start()
 
